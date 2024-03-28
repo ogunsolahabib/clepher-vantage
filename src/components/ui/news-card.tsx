@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 export default function NewsCard({ data }: { data: any }) {
-    return <div className="max-w-full mx-auto bg-white rounded-xl border overflow-hidden">
-        <div className="flex flex-col">
+    return <div className="w-full max-w-full mx-auto bg-white rounded-xl border overflow-hidden">
+        <div className="w-200">
             <div className="md:flex-shrink-0 rounded-lg  relative w-full h-28">
                 {data?.banner_image && <Image className="w-full h-full object-cover" src={data.banner_image} alt="News Image" fill />}
             </div>
