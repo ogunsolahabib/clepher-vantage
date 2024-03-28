@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <WithSidebar sidebarContent={() => <News />}
     >
-      <div className="flex min-h-screen flex-col items-center justify-between py-20">
+      <div className="flex min-h-screen flex-col justify-between py-20">
         <HomeSections />
       </div>
     </WithSidebar>

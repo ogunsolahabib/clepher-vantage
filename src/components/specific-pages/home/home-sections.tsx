@@ -13,7 +13,8 @@ export default function HomeSections() {
     return <section className="w-full flex flex-col gap-y-10">
         <PopularStocks />
         {isLoading ? <div>Loading...</div> : <> <TopGainersSection data={data.top_gainers} />
-            <TopLosersSection data={data.top_losers} /></>}
+            <TopLosersSection data={data.top_losers} />
+        </>}
 
     </section>
 }

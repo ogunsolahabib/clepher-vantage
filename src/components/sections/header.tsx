@@ -7,7 +7,7 @@ export default function Header() {
             <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
                 <a href="/">
 
-                    <span className="text-xl lg:text-2xl font-bold text-clepher whitespace-nowrap">Clepher Vantage</span>
+                    <span className="text-xl md:text-2xl font-bold text-clepher whitespace-nowrap">Clepher Vantage</span>
                 </a>
                 <Search />
             </div>

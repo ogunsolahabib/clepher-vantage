@@ -24,9 +24,7 @@ export default function RootLayout({
         <ReactQueryWrapper>
           <Header />
           <main className="min-h-[calc(100vh-120px)]">
-            <div className="container">
-              {children}
-            </div>
+            {children}
           </main>
           <Footer />
         </ReactQueryWrapper>
