@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "symbol": "F",
+            "companyName": "Ford Motor Co.",
+            "primaryExchange": "NEW YORK STOCK EXCHANGE INC."
+        },
+        {
+            "symbol": "SOFI",
+            "companyName": "SoFi Technologies Inc",
+            "primaryExchange": "NASDAQ"
+        },
+        {
+            "symbol": "LCID",
+            "companyName": "Lucid Group Inc",
+            "primaryExchange": "NASDAQ"
+        },
+        {
+            "symbol": "T",
+            "companyName": "AT&T, Inc.",
+            "primaryExchange": "NEW YORK STOCK EXCHANGE INC."
+        },
+        {
+            "symbol": "C",
+            "companyName": "Citigroup Inc",
+            "primaryExchange": "NEW YORK STOCK EXCHANGE INC."
+        },
+        {
+            "symbol": "GRAB",
+            "companyName": "Grab Holdings Limited - Class A",
+            "primaryExchange": "NASDAQ"
+        },
+        {
+            "symbol": "MRO",
+            "companyName": "Marathon Oil Corporation",
+            "primaryExchange": "NEW YORK STOCK EXCHANGE INC."
+        },
+        {
+            "symbol": "CZOO",
+            "companyName": "Cazoo Group Ltd - Class A",
+            "primaryExchange": "NEW YORK STOCK EXCHANGE INC."
+        },
+        {
+            "symbol": "META",
+            "companyName": "Meta Platforms Inc - Class A",
+            "primaryExchange": "NASDAQ"
+        }
+    ]
+}
