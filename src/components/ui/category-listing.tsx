@@ -1,4 +1,4 @@
-import popularStocks from '../../../public/popular-stocks.json'
+import popularStocks from '@/lib/popular-stocks.json'
 import PopularStockItem from "./popular-stock-item";
 
 

@@ -1,4 +1,4 @@
-import popularStocks from '../../../../public/popular-stocks.json'
+import popularStocks from '@/lib/popular-stocks.json'
 import Heading2 from '@/components/ui/heading2'
 import PopularStockItem from '@/components/ui/popular-stock-item'
 
