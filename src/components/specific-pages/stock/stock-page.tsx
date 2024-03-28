@@ -6,6 +6,8 @@ import WithSidebar from "@/components/ui/with-sidebar";
 import News from "@/components/sections/news";
 import { useReactQueryFetch } from "@/lib/queryHooks";
 import StockTrendSection from "./stock-trend-section";
+import StockOverviewSkeleton from "@/components/skeletons/stock-overview-skeleton";
+import StockAboutSkeleton from "@/components/skeletons/stock-about-skeleton";
 
 export default function StockPage({ symbol }: { symbol: string }) {
     const { data, isLoading } = useReactQueryFetch({
@@ -23,13 +25,12 @@ export default function StockPage({ symbol }: { symbol: string }) {
                 <a href={'/'}>Back</a>
             </div>
 
-            {isLoading ? <div>Loading...</div> : <>
+            {isLoading ? <StockOverviewSkeleton /> :
                 <StockOverview stock={data} />
 
-            </>}
+            }
             <StockTrendSection symbol={symbol} />
-
-            {isLoading ? <div>Loading...</div> : <StockAbout about={data.Description} />}
+            {isLoading ? <StockAboutSkeleton /> : <StockAbout about={data.Description} />}
         </div>
     </WithSidebar>
 }

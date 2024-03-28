@@ -1,6 +1,7 @@
 import { useReactQueryFetch } from "@/lib/queryHooks"
 import StockTrendGraph from "./stock-trend-graph"
 import StockTrendTable from "./stock-trend-table"
+import StockTrendSkeleton from "@/components/skeletons/stock-trend-skeleton";
 
 export default function StockTrendSection({ symbol }: { symbol: string }) {
     const { data: dataObject, isLoading } = useReactQueryFetch({
@@ -10,8 +11,9 @@ export default function StockTrendSection({ symbol }: { symbol: string }) {
     });
 
     if (isLoading) {
-        return <div>Loading...</div>
+        return <StockTrendSkeleton />
     }
+
 
     const data = dataObject['Time Series (Daily)'];
 
