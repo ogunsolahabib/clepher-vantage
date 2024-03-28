@@ -16,8 +16,8 @@ export default function Search(props: { initialSearch?: string }): JSX.Element {
 
     const { data } = useReactQueryFetch({
         function: 'SYMBOL_SEARCH',
-        // keywords: search
-        keywords: 'tesco' //demo
+        keywords: search
+        // keywords: 'tesco' //demo
     }, search, {
 
         enabled: search.length > 0

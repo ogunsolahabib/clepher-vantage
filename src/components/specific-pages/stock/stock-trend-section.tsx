@@ -6,8 +6,8 @@ import StockTrendSkeleton from "@/components/skeletons/stock-trend-skeleton";
 export default function StockTrendSection({ symbol }: { symbol: string }) {
     const { data: dataObject, isLoading } = useReactQueryFetch({
         function: 'TIME_SERIES_DAILY',
-        // symbol
-        symbol: 'IBM', //demo
+        symbol
+        // symbol: 'IBM', //demo
     });
 
     if (isLoading) {

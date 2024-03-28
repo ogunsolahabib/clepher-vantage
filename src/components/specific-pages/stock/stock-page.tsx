@@ -12,8 +12,8 @@ import StockAboutSkeleton from "@/components/skeletons/stock-about-skeleton";
 export default function StockPage({ symbol }: { symbol: string }) {
     const { data, isLoading } = useReactQueryFetch({
         function: 'OVERVIEW',
-        // symbol
-        symbol: 'IBM' //demo
+        symbol
+        // symbol: 'IBM' //demo
 
     })
 

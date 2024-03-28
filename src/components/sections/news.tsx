@@ -8,9 +8,9 @@ import NewsListingSkeleton from "../skeletons/news-lislting-skeleton";
 export default function News({ ticker }: { ticker?: string }) {
     const { data, isLoading } = useReactQueryFetch({
         function: 'NEWS_SENTIMENT',
-        // tickers: ticker,
-        tickers: 'AAPL', //demo
-        // limit: 5
+        tickers: ticker,
+        // tickers: 'AAPL', //demo
+        limit: 5
     }, ticker);
 
     return <div className="bg-background px-6 py-4">
