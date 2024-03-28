@@ -13,8 +13,8 @@ export default function HomeSections() {
     })
     return <section className="w-full flex flex-col gap-y-10">
         <PopularStocksListing />
-        {isLoading ? <StocksGridSkeleton /> : <> <TopGainersSection data={data.top_gainers} />
-            <TopLosersSection data={data.top_losers} />
+        {isLoading ? <StocksGridSkeleton /> : <> <TopGainersSection data={data.top_gainers ?? []} />
+            <TopLosersSection data={data.top_losers ?? []} />
         </>}
 
     </section>
