@@ -15,7 +15,7 @@ export default function StockTrendSection({ symbol }: { symbol: string }) {
     }
 
 
-    const data = dataObject['Time Series (Daily)'];
+    const data = dataObject['Time Series (Daily)'] ?? {};
 
 
     return <section className="mt-14">
